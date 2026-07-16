@@ -21,6 +21,6 @@ spec:
     spec:
       containers:
       - name: backend
-        image: nginx:1.27
+        image: nginx:notfound
         ports:
         - containerPort: 80
