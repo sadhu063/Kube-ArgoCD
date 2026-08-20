@@ -26,4 +26,4 @@ jobs:
         run: |
           echo "Building application..."
           sleep 5
-          echo "Build successful!"
+          echo "Build successf!"
