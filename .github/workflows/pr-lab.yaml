@@ -1,0 +1,29 @@
+name: PR vs Main Lab
+
+on:
+  workflow_dispatch:
+
+  pull_request:
+    branches:
+      - main
+
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show Event Information
+        run: |
+          echo "Event: ${{ github.event_name }}"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "SHA: ${{ github.sha }}"
+
+      - name: Simulate Build
+        run: |
+          echo "Building application..."
+          sleep 5
+          echo "Build successful!"
