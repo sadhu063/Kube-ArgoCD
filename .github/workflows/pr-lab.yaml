@@ -25,5 +25,5 @@ jobs:
       - name: Simulate Build
         run: |
           echo "Building application..."
-          sleep 5
+          sleep 4
           echo "Build successf!"
